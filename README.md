@@ -4,7 +4,16 @@ This code balances the Cassie biped robot on one leg in MuJoCo using a Linear Qu
     <img src="https://github.com/user-attachments/assets/0035d3b9-217a-40bf-9487-f7a29fa71cc9" alt="00_1leg_photo" style="width:40%;">
 </div>
 
-You can download prebuilt binaries for MuJoCo from the GitHub [releases page](https://github.com/google-deepmind/mujoco/releases/). Alternatively, if you are working with Python, as I have, you can install the native bindings from PyPI via pip install MuJoCo. For alternative installation instructions, see [here](https://github.com/google-deepmind/mujoco#installation).
+You can download prebuilt binaries for MuJoCo from the GitHub [releases page](https://github.com/google-deepmind/mujoco/releases/). Alternatively, if you are working with Python, as I have, you can install the native bindings from PyPI via pip install MuJoCo. 
+
+### Python (>= 3.9)
+
+The native Python bindings, which come pre-packaged with a copy of MuJoCo, can be installed from [PyPI](https://pypi.org/project/mujoco/) via:
+
+```bash
+pip install mujoco
+
+For alternative installation instructions, see [here](https://github.com/google-deepmind/mujoco#installation).
 
 The controller's Q and R cost matrices have been fine-tuned within a specific operating region using the MuJoCo simulator (see photos below for reference).
 
