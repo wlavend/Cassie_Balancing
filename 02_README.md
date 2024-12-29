@@ -1,6 +1,6 @@
 ## One-leg LQR Controller Implementation for the Cassie Robot
 
-This code implements a Linear Quadratic Regulator (LQR) controller to balance the Cassie robot on one leg in MuJoCo. The original MJCF model and assets were provided by [Agility Robotics](https://agilityrobotics.com/) under an [MIT License](https://github.com/google-deepmind/mujoco_menagerie/blob/main/agility_cassie/LICENSE). The implementation is inspired by [this code](https://colab.research.google.com/github/deepmind/mujoco/blob/main/python/LQR.ipynb), which balances a 27 DoF humanoid on one leg. The Cassie model used in this code can be found [here](https://github.com/google-deepmind/mujoco_menagerie/blob/main/agility_cassie/README.md).
+This code implements a Linear Quadratic Regulator (LQR) controller to balance the Cassie robot on one leg in MuJoCo. The original MJCF model and assets were provided by [Agility Robotics](https://agilityrobotics.com/) under an [MIT License](https://github.com/google-deepmind/mujoco_menagerie/blob/main/agility_cassie/LICENSE). The implementation is inspired by [this tutorial](https://colab.research.google.com/github/deepmind/mujoco/blob/main/python/LQR.ipynb), which balances a 27 DoF humanoid on one leg. The Cassie model used in this code can be found [here](https://github.com/google-deepmind/mujoco_menagerie/blob/main/agility_cassie/README.md).
 
 
 <div align="center">
