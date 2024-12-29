@@ -9,9 +9,9 @@ This code balances the Cassie biped robot on one leg in MuJoCo using a Linear Qu
 The weighting matrix \( \mathbf{Q} \) is designed to incorporate position, velocity, and balance costs. Each subcomponent is defined as follows:
 
 - **Position Weighting (\( \mathbf{Q}_{\text{pos}} \)):**
-  \[
+  $$
   \mathbf{Q}_{\text{pos}} = \text{diag} \left( \frac{1}{\bar{x}_1^2}, \frac{1}{\bar{x}_2^2}, \dots, \frac{1}{\bar{x}_{32}^2} \right) \in \mathbb{R}^{32 \times 32}
-  \]
+  $$
 
 - **Velocity Weighting (\( \mathbf{Q}_{\text{vel}} \)):**
   \[
@@ -19,7 +19,7 @@ The weighting matrix \( \mathbf{Q} \) is designed to incorporate position, veloc
   \]
 
 - **Balance Cost (\( \mathbf{Q}_{\text{balance}} \)):**
-  The difference between the Jacobians of the center of mass (\( \mathbf{J}_{\text{CoM}} \)) and the foot (\( \mathbf{J}_{\text{foot}} \)) contributes to balance:
+  The difference between the Jacobians of the centre of mass (\( \mathbf{J}_{\text{CoM}} \)) and the foot (\( \mathbf{J}_{\text{foot}} \)) contributes to balance:
   \[
   \mathbf{Q}_{\text{balance}} = \mathbf{J}_d^T \mathbf{J}_d, \quad \text{where } \mathbf{J}_d = \mathbf{J}_{\text{CoM}} - \mathbf{J}_{\text{foot}}
   \]
