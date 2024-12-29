@@ -11,7 +11,7 @@ You can download prebuilt binaries for MuJoCo from the GitHub [releases page](ht
 The native Python bindings, which come pre-packaged with a copy of MuJoCo, can be installed from [PyPI](https://pypi.org/project/mujoco/) via:
 
 ```bash
-pip install mujoco
+pip install mujoco '''
 
 For alternative installation instructions, see [here](https://github.com/google-deepmind/mujoco#installation).
 
