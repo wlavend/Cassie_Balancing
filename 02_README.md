@@ -4,6 +4,8 @@ This code balances the Cassie biped robot on one leg in MuJoCo using a Linear Qu
     <img src="https://github.com/user-attachments/assets/0035d3b9-217a-40bf-9487-f7a29fa71cc9" alt="00_1leg_photo" style="width:30%;">
 </div>
 
+---
+
 ## Derivation of Q
 
 The weighting matrix \( \mathbf{Q} \) is designed to incorporate position, velocity, and balance costs. Each subcomponent is defined as follows:
@@ -54,10 +56,11 @@ The controller's Q and R cost matrices have been fine-tuned within a specific op
 </div>
 
 
-
 <div align="center">
     <img src="./08_Visualisation%20of%20Maximum%20Operating%20Margin%20in%20the%20Y%20Direction.png" alt="Visualization" style="width:60%;">
 </div>
+
+---
 
 I have modified the XML file to include the precise positioning of the robot on one leg, along with an additional keyframe that incorporates a ~1.5 cm height transition. To map the elements in the keyframe within the XML file to their respective position and velocity indices, the data indexing is provided below.
 
