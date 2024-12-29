@@ -150,3 +150,6 @@ The configuration vector `q` includes all the joint angles (rad) in the order be
 - tarsus (passive)      ()  [50, 170]
 - toe joint             ()  [-140, -30]
 
+---
+
+**Disclaimer:** This code was developed by William Lavender as part of an engineering honours thesis, completed in 2024 at The University of Sydney.
