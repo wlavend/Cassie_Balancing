@@ -1,4 +1,4 @@
-#### One-leg LQR Controller Implementation for the Cassie Robot
+## One-leg LQR Controller Implementation for the Cassie Robot
 
 This code implements a Linear Quadratic Regulator (LQR) controller to balance the Cassie biped robot on one leg in MuJoCo. The original MJCF model and assets were provided by [Agility Robotics](https://agilityrobotics.com/) under an [MIT License](https://github.com/google-deepmind/mujoco_menagerie/blob/main/agility_cassie/LICENSE). This implementation is inspired by [this code](https://colab.research.google.com/github/deepmind/mujoco/blob/main/python/LQR.ipynb), which balances a 27 DoF humanoid on one leg. The Cassie model used in this code can be found [here](https://github.com/google-deepmind/mujoco_menagerie/blob/main/agility_cassie/README.md).
 
@@ -13,7 +13,7 @@ This code implements a Linear Quadratic Regulator (LQR) controller to balance th
 You can download prebuilt binaries for MuJoCo from the GitHub [releases page](https://github.com/google-deepmind/mujoco/releases/). Alternatively, if you are working with Python, as I have, you can install the native bindings from PyPI as demonstrated below.
 
 
-## Python (>= 3.9)
+#### Python (>= 3.9)
 
 The native Python bindings, which come pre-packaged with a copy of MuJoCo, can be installed from [PyPI](https://pypi.org/project/mujoco/) via:
 
@@ -23,7 +23,7 @@ pip install mujoco
 
 For alternative installation instructions, see [here](https://github.com/google-deepmind/mujoco#installation).
 
-## Operating Region
+### Operating Region
 
 The controller's Q and R cost matrices have been fine-tuned to enable the robot to balance effectively across a wider operating region in the MuJoCo simulator. This region is visualised in the photos below. To explore this operating region yourself, refer to the data indexing section for guidance on which elements to modify in the keyframe embedded within the XML file.
 
@@ -41,7 +41,7 @@ The controller's Q and R cost matrices have been fine-tuned to enable the robot 
 I have modified the XML file to include the precise positioning of the robot on one leg, along with an additional keyframe that incorporates a ~1.5 cm height transition. To map the elements in the keyframe within the XML file to their respective position and velocity indices, the data indexing is provided below.
 
 
-## Data Indexing
+### Data Indexing
 
 As per `cassiemujoco.h`, the order of states in `d.qpos` is as follows:
 
@@ -117,7 +117,7 @@ As for the velocities in `d.qvel`, the order is:
     [31] Right foot            (Motor [9], Joint [5])
 
 
-## The Joints
+### The Joints
 
 The configuration vector `q` includes all the joint angles (rad) in the order below. Nominal joint values and joint limits are included (in deg, from `cassie.xml` file). **NOTE:** Agility documentation and `cassie.xml` files have different values for joint limits. Check later for consistency! Possibly soft/hard limits?
 - hip abduction         ()  [-15, 22.5]
