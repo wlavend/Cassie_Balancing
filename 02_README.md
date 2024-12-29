@@ -41,7 +41,7 @@ You will also need to ensure the Python script is in the desired directory, alon
 mjpython DIRECTORY/LQR_1leg.py
 ```
 
-For more in-depth instructions on executing Python with MuJoCo, refer to this [guide]{https://mujoco.readthedocs.io/en/stable/python.html}.
+For more in-depth instructions on executing Python with MuJoCo, refer to this [guide](https://mujoco.readthedocs.io/en/stable/python.html).
 
 ### Keyframe Transition
 
