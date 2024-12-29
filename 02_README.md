@@ -19,5 +19,10 @@ For alternative installation instructions, see [here](https://github.com/google-
 
 The controller's Q and R cost matrices have been fine-tuned within a specific operating region using the MuJoCo simulator (see photos below for reference).
 
+<div align="center">
+    <img src="./07_Visualisation%20of%20Maximum%20Operating%20Margin%20in%20the%20X%20and%20Z%20Directions.png" alt="Visualization" style="width:50%;">
+</div>
+
+
 I have modified the XML file to include the perfect positioning of the robot on one-leg (and one more keyframe wherein a ~1.5cm height transition works). 
 
