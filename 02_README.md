@@ -25,6 +25,12 @@ For alternative installation instructions, see [here](https://github.com/google-
 
 ---
 
+### Keyframe Transition
+
+I have modified the XML file to include the precise positioning of the robot on one leg, along with an additional keyframe that incorporates a ~1.5 cm height transition. To enable or disable this keyframe transition feature, simply adjust the toggle at the top of the Python script. Additionally, you can toggle the application of forces to the pelvis on or off as needed.
+
+---
+
 ### Operating Region
 
 The controller's Q and R cost matrices have been fine-tuned to enable the robot to balance effectively across a wider operating region in the MuJoCo simulator. This region is visualised in the photos below. To explore this operating region yourself, refer to the data indexing section for guidance on which elements to modify in the keyframe embedded within the XML file.
@@ -37,12 +43,6 @@ The controller's Q and R cost matrices have been fine-tuned to enable the robot 
 <div align="center">
     <img src="./08_Visualisation%20of%20Maximum%20Operating%20Margin%20in%20the%20Y%20Direction.png" alt="Visualization" style="width:60%;">
 </div>
-
----
-
-### Keyframe Transition
-
-I have modified the XML file to include the precise positioning of the robot on one leg, along with an additional keyframe that incorporates a ~1.5 cm height transition. To enable or disable this keyframe transition feature, simply adjust the toggle at the top of the Python script. Additionally, you can toggle the application of forces to the pelvis on or off as needed.
 
 ---
 
