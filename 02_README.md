@@ -126,7 +126,7 @@ As for the velocities in `d.qvel`, the order is:
 
 ### The Joints
 
-The configuration vector `q` includes all the joint angles (rad) in the order below. Nominal joint values and joint limits are included (in deg, from `cassie.xml` file). **NOTE:** Agility documentation and `cassie.xml` files have different values for joint limits. Check later for consistency! Possibly soft/hard limits?
+The configuration vector `q` includes all the joint angles (rad) in the order below. Nominal joint values and joint limits are included (in deg, from `cassie.xml` file). **NOTE:** Agility documentation and `cassie.xml` files have different values for joint limits. Check later for consistency! 
 - hip abduction         ()  [-15, 22.5]
 - hip yaw               ()  [-22.5, 22.5]
 - hip pitch             ()  [-50, 80]
