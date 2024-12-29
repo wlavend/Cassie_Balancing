@@ -40,7 +40,7 @@ The controller's Q and R cost matrices have been fine-tuned to enable the robot 
 
 ---
 
-I have modified the XML file to include the precise positioning of the robot on one leg, along with an additional keyframe that incorporates a ~1.5 cm height transition. To toggle this keyframe transition feature simply change the toggle in the top of the Python script (you can also toggle forces applied to the pelvis on/off)
+I have modified the XML file to include the precise positioning of the robot on one leg, along with an additional keyframe that incorporates a ~1.5 cm height transition. To enable or disable this keyframe transition feature, simply adjust the toggle at the top of the Python script. Additionally, you can toggle the application of forces to the pelvis on or off as needed.
 
 ### Data Indexing
 
