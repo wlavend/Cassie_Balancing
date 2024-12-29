@@ -128,7 +128,7 @@ The configuration vector `q` includes all the joint angles (rad) in the order be
 
 ## Derivation of Q
 
-The weighting matrix $ \mathbf{Q} $ is designed to incorporate position, velocity, and balance costs. Each subcomponent is defined as follows:
+The weighting matrix $$\mathbf{Q}$$ is designed to incorporate position, velocity, and balance costs. Each subcomponent is defined as follows:
 
 - **Position Weighting (\( \mathbf{Q}_{\text{pos}} \)):**
   $$
