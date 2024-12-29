@@ -35,7 +35,7 @@ pip install numpy
 pip install matplotlib
 ```
 
-You will also need to ensure the Python script is in the desired directory, alongside the XML file. To execute:
+You will also need to ensure the Python script is in the desired directory, alongside the XML file. To execute the code, run:
 
 ```
 mjpython DIRECTORY/LQR_1leg.py
