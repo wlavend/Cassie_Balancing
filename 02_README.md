@@ -131,9 +131,7 @@ The configuration vector `q` includes all the joint angles (rad) in the order be
 The weighting matrix $$\mathbf{Q}$$ is designed to incorporate position, velocity, and balance costs. Each subcomponent is defined as follows:
 
 - **Position Weighting (\( \mathbf{Q}_{\text{pos}} \)):**
-  $$
-  \mathbf{Q}_{\text{pos}} = \text{diag} \left( \frac{1}{\bar{x}_1^2}, \frac{1}{\bar{x}_2^2}, \dots, \frac{1}{\bar{x}_{32}^2} \right) \in \mathbb{R}^{32 \times 32}
-  $$
+  $$\mathbf{Q}_{\text{pos}} = \text{diag} \left( \frac{1}{\bar{x}_1^2}, \frac{1}{\bar{x}_2^2}, \dots, \frac{1}{\bar{x}_{32}^2} \right) \in \mathbb{R}^{32 \times 32}$$
 
 - **Velocity Weighting (\( \mathbf{Q}_{\text{vel}} \)):**
   $$
