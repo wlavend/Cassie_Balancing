@@ -6,4 +6,4 @@ You can download prebuilt binaries for MuJoCo from the GitHub [releases page](ht
 
 I have modified the XML file to include the perfect positioning of the robot on one-leg (and one more keyframe wherein a ~1.5cm height transition works).
 
-<img src="https://github.com/user-attachments/assets/0035d3b9-217a-40bf-9487-f7a29fa71cc9" alt="00_1leg_photo" style="width:70%;">
+<img src="https://github.com/user-attachments/assets/0035d3b9-217a-40bf-9487-f7a29fa71cc9" alt="00_1leg_photo" style="width:40%;">
