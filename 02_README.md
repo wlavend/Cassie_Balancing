@@ -8,7 +8,7 @@ This code balances the Cassie biped robot on one leg in MuJoCo using a Linear Qu
 
 The weighting matrix \( \mathbf{Q} \) is designed to incorporate position, velocity, and balance costs. Each subcomponent is defined as follows:
 
-$1/x = sqrt(4)$
+$1/x = \sqrt(4)$
 
 - **Position Weighting (\( \mathbf{Q}_{\text{pos}} \)):**
   $$
