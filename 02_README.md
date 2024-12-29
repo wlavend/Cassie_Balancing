@@ -49,7 +49,7 @@ I have modified the XML file to include the precise positioning of the robot on 
 
 ### Operating Region
 
-The controller's Q and R cost matrices have been fine-tuned to enable the robot to balance effectively across a wider operating region in the MuJoCo simulator. This region is visualised in the photos below. To explore this operating region yourself, refer to the data indexing section for guidance on which elements to modify in the keyframe embedded within the XML file.
+The controller's Q and R cost matrices have been fine-tuned to enable the robot to balance effectively across a wider operating region in the MuJoCo simulator. This region is visualised in the photos below. To explore this operating region yourself, refer to the data indexing section below for guidance on which elements to modify in the keyframe embedded within the XML file.
 
 <div align="center">
     <img src="./07_Visualisation%20of%20Maximum%20Operating%20Margin%20in%20the%20X%20and%20Z%20Directions.png" alt="Visualization" style="width:80%;">
