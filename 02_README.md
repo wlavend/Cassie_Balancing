@@ -25,6 +25,21 @@ For alternative installation instructions, see [here](https://github.com/google-
 
 ---
 
+### Running Script
+
+To run the script, you will first need to make sure `numpy` and `matplotlib` have been installed:
+
+```
+pip install numpy
+pip install matplotlib
+```
+
+You will also need to ensure the Python script is in the desired directory, alongside the XML file. To execute:
+
+```
+mjpython DIRECTORY/LQR_1leg.py
+```
+
 ### Keyframe Transition
 
 I have modified the XML file to include the precise positioning of the robot on one leg, along with an additional keyframe that incorporates a ~1.5 cm height transition. To enable or disable this keyframe transition feature, simply adjust the toggle at the top of the Python script. Additionally, you can toggle the application of forces to the pelvis on or off as needed.
