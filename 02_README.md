@@ -23,6 +23,8 @@ pip install mujoco
 
 For alternative installation instructions, see [here](https://github.com/google-deepmind/mujoco#installation).
 
+---
+
 ### Operating Region
 
 The controller's Q and R cost matrices have been fine-tuned to enable the robot to balance effectively across a wider operating region in the MuJoCo simulator. This region is visualised in the photos below. To explore this operating region yourself, refer to the data indexing section for guidance on which elements to modify in the keyframe embedded within the XML file.
@@ -38,10 +40,11 @@ The controller's Q and R cost matrices have been fine-tuned to enable the robot 
 
 ---
 
-I have modified the XML file to include the precise positioning of the robot on one leg, along with an additional keyframe that incorporates a ~1.5 cm height transition. To map the elements in the keyframe within the XML file to their respective position and velocity indices, the data indexing is provided below.
-
+I have modified the XML file to include the precise positioning of the robot on one leg, along with an additional keyframe that incorporates a ~1.5 cm height transition. To toggle this keyframe transition feature simply change the toggle in the top of the Python script (you can also toggle forces applied to the pelvis on/off)
 
 ### Data Indexing
+
+To map the elements in the keyframe within the XML file to their respective position and velocity indices, the data indexing is provided below.
 
 As per `cassiemujoco.h`, the order of states in `d.qpos` is as follows:
 
